@@ -3,47 +3,220 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page - Mi Empresa</title>
-  <!-- Vinculamos el CSS -->
+  <title>SunFlower Chic | La reina de la lencería</title>
+
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="top">
 
   <!-- Navbar -->
-<header>
-  <div class="container">
-    <img src="img/logo.png" alt="Logo" class="logo">
-    
-    <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('show')">
-      <span></span>
-      <span></span>
-      <span></span>
+  <header>
+    <div class="header-container">
+      <img src="img/logo.png" alt="Logo" class="logo">
+      <nav class="nav-links">
+        <a href="#top">Inicio</a>
+        <a href="#colecciones">Colecciones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </div>
+  </header>
 
-    <nav>
-      <a href="#top">Inicio</a>
-      <a href="#colecciones">Colecciones</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </div>
-</header>
+  <!-- Slider -->
+  <section id="inicio">
+    <div class="slider">
+      <div class="slide active" style="background-image: url('img/slider1.jpg');">
+        <div class="slide-content">
+          <h2>Lencería Elegante</h2>
+          <p>Descubre nuestra colección más exclusiva.</p>
+          <a href="#colecciones" class="btn">Ver Catálogo</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('img/slider2.jpg');">
+        <div class="slide-content">
+          <h2>Seduce con Estilo</h2>
+          <p>Modelos que resaltan tu elegancia.</p>
+          <a href="#colecciones" class="btn">Ver Catálogo</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('img/slider3.jpg');">
+        <div class="slide-content">
+          <h2>Comodidad y Belleza</h2>
+          <p>Encuentra el equilibrio perfecto entre diseño y confort.</p>
+          <a href="#colecciones" class="btn">Ver Catálogo</a>
+        </div>
+      </div>
 
-  <!-- Secciones de ejemplo -->
-  <section id="colecciones">
-    <h2>Colecciones</h2>
-    <p>Aquí irá la cuadrícula con las 15 colecciones (foto + título + descripción + botón).</p>
+      <!-- Puntitos -->
+      <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
   </section>
 
+  <!-- Colecciones -->
+<section id="colecciones">
+  <h2>Colecciones</h2>
+  <div class="cards-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="img/cole/col1.jpg" alt="Producto 1">
+      <h3>Producto 1</h3>
+      <p>Descripción breve del producto 1.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%201" class="btn">Contactar</a>
+    </div>
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="img/cole/col2.jpg" alt="Producto 2">
+      <h3>Producto 2</h3>
+      <p>Descripción breve del producto 2.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%202" class="btn">Contactar</a>
+    </div>
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="img/cole/col3.jpg" alt="Producto 3">
+      <h3>Producto 3</h3>
+      <p>Descripción breve del producto 3.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%203" class="btn">Contactar</a>
+    </div>
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="img/cole/col1.jpg" alt="Producto 4">
+      <h3>Producto 4</h3>
+      <p>Descripción breve del producto 4.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%204" class="btn">Contactar</a>
+    </div>
+    <!-- Card 5 -->
+    <div class="card">
+      <img src="img/cole/col2.jpg" alt="Producto 5">
+      <h3>Producto 5</h3>
+      <p>Descripción breve del producto 5.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%205" class="btn">Contactar</a>
+    </div>
+    <!-- Card 6 -->
+    <div class="card">
+      <img src="img/cole/col3.jpg" alt="Producto 6">
+      <h3>Producto 6</h3>
+      <p>Descripción breve del producto 6.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%206" class="btn">Contactar</a>
+    </div>
+    <!-- Card 7 -->
+    <div class="card">
+      <img src="img/cole/col1.jpg" alt="Producto 7">
+      <h3>Producto 7</h3>
+      <p>Descripción breve del producto 7.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%207" class="btn">Contactar</a>
+    </div>
+    <!-- Card 8 -->
+    <div class="card">
+      <img src="img/cole/col2.jpg" alt="Producto 8">
+      <h3>Producto 8</h3>
+      <p>Descripción breve del producto 8.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%208" class="btn">Contactar</a>
+    </div>
+    <!-- Card 9 -->
+    <div class="card">
+      <img src="img/cole/col3.jpg" alt="Producto 9">
+      <h3>Producto 9</h3>
+      <p>Descripción breve del producto 9.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%209" class="btn">Contactar</a>
+    </div>
+    <!-- Card 10 -->
+    <div class="card">
+      <img src="img/cole/col1.jpg" alt="Producto 10">
+      <h3>Producto 10</h3>
+      <p>Descripción breve del producto 10.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%2010" class="btn">Contactar</a>
+    </div>
+    <!-- Card 11 -->
+    <div class="card">
+      <img src="img/cole/col2.jpg" alt="Producto 11">
+      <h3>Producto 11</h3>
+      <p>Descripción breve del producto 11.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%2011" class="btn">Contactar</a>
+    </div>
+    <!-- Card 12 -->
+    <div class="card">
+      <img src="img/cole/col3.jpg" alt="Producto 12">
+      <h3>Producto 12</h3>
+      <p>Descripción breve del producto 12.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%2012" class="btn">Contactar</a>
+    </div>
+    <!-- Card 13 -->
+    <div class="card">
+      <img src="img/cole/col1.jpg" alt="Producto 13">
+      <h3>Producto 13</h3>
+      <p>Descripción breve del producto 13.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%2013" class="btn">Contactar</a>
+    </div>
+    <!-- Card 14 -->
+    <div class="card">
+      <img src="img/cole/col2.jpg" alt="Producto 14">
+      <h3>Producto 14</h3>
+      <p>Descripción breve del producto 14.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%2014" class="btn">Contactar</a>
+    </div>
+    <!-- Card 15 -->
+    <div class="card">
+      <img src="img/cole/col3.jpg" alt="Producto 15">
+      <h3>Producto 15</h3>
+      <p>Descripción breve del producto 15.</p>
+      <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20información%20sobre%20Producto%2015" class="btn">Contactar</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Nosotros -->
   <section id="nosotros">
     <h2>Nosotros</h2>
-    <p>Texto sobre tu empresa o proyecto.</p>
+    <p>Ubicados en Nayarit, llevamos más de 4 años ofreciendo la mejor lencería con calidad y estilo. Nos apasiona ayudar a nuestros clientes a encontrar piezas que los hagan sentir seguros y elegantes.</p>
+    <div class="datos-nosotros">
+      <div class="dato"><span>📍</span><p>Nayarit</p></div>
+      <div class="dato"><span>⏱</span><p>4+ años de experiencia</p></div>
+      <div class="dato"><span>💖</span><p>Lencería de calidad</p></div>
+    </div>
   </section>
 
+  <!-- Contacto -->
   <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Aquí pondremos un formulario o datos de contacto.</p>
+    <div class="contacto-container">
+      <img src="img/logo.png" alt="Logo" class="contact-logo">
+      <h2>Contacto</h2>
+      <p>Estamos para ayudarte. Escríbenos o contáctanos por WhatsApp:</p>
+      <a href="https://wa.me/1234567890" class="btn whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+      </a>
+
+      <div class="contact-info">
+        <p>Teléfono / WhatsApp: <a href="https://wa.me/1234567890">+52 123 456 7890</a></p>
+        <div class="redes">
+          <a href="https://www.instagram.com/tuusuario" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/tuusuario" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 SunFlower Chic. Todos los derechos reservados.</p>
+      <div class="footer-redes">
+        <a href="https://www.instagram.com/tuusuario" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/tuusuario" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slider JS -->
+  <script src="js/slider.js"></script>
 
 </body>
 </html>
