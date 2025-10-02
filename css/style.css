@@ -451,3 +451,74 @@ footer {
     font-size: 1.3rem;
   }
 }
+
+
+/* Ajustes responsivos adicionales */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-links {
+    flex-wrap: nowrap;         /* que no se bajen */
+    gap: 15px;                 /* menos espacio entre ellos */
+  }
+
+  .nav-links a {
+    font-size: 14px;           /* más chico */
+  }
+
+  header img.logo {
+    height: 45px;              /* logo más pequeño en móvil */
+  }
+
+  /* Textos generales */
+  section h2 {
+    font-size: 2rem;           /* reducir títulos */
+  }
+
+  section p {
+    font-size: 1rem;           /* reducir párrafos */
+  }
+
+  /* Nosotros */
+  .datos-nosotros {
+    flex-wrap: nowrap;         /* que no se vayan abajo */
+    justify-content: space-around;
+    gap: 15px;                 /* menos separación */
+  }
+
+  .dato span {
+    font-size: 1.5rem;
+  }
+
+  .dato p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navbar aún más compacto */
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  /* Títulos y párrafos más pequeños */
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
+  }
+
+  /* Nosotros */
+  .dato span {
+    font-size: 1.2rem;
+  }
+
+  .dato p {
+    font-size: 0.8rem;
+  }
+}
