@@ -393,7 +393,13 @@ footer {
   }
 
   .nav-links {
-    gap: 20px;
+    gap: 15px;
+    flex-wrap: nowrap;   /* no baja a otra línea */
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 5px;
   }
 
   section {
@@ -450,39 +456,12 @@ footer {
     margin: 0 10px;
     font-size: 1.3rem;
   }
-}
 
-
-/* Ajustes responsivos adicionales */
-@media (max-width: 768px) {
-  /* Navbar */
-  .nav-links {
-    flex-wrap: nowrap;         /* que no se bajen */
-    gap: 15px;                 /* menos espacio entre ellos */
-  }
-
-  .nav-links a {
-    font-size: 14px;           /* más chico */
-  }
-
-  header img.logo {
-    height: 45px;              /* logo más pequeño en móvil */
-  }
-
-  /* Textos generales */
-  section h2 {
-    font-size: 2rem;           /* reducir títulos */
-  }
-
-  section p {
-    font-size: 1rem;           /* reducir párrafos */
-  }
-
-  /* Nosotros */
+  /* Nosotros datos en una sola fila */
   .datos-nosotros {
-    flex-wrap: nowrap;         /* que no se vayan abajo */
+    flex-wrap: nowrap;
     justify-content: space-around;
-    gap: 15px;                 /* menos separación */
+    gap: 15px;
   }
 
   .dato span {
