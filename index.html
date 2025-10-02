@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - Mi Empresa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+    header nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 5px 10px;
+      font-size: 14px;
+    }
+    section {
+      padding: 80px 20px;
+      min-height: 100vh;
+    }
+    section:nth-child(even) {
+      background: #f4f4f4;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .item p {
+      padding: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#seccion1">Sección 1</a>
+      <a href="#seccion2">Sección 2</a>
+      <a href="#seccion3">Sección 3</a>
+      <a href="#seccion4">Sección 4</a>
+      <a href="#seccion5">Sección 5</a>
+      <a href="#seccion6">Sección 6</a>
+      <a href="#seccion7">Sección 7</a>
+      <a href="#seccion8">Sección 8</a>
+      <a href="#seccion9">Sección 9</a>
+      <a href="#seccion10">Sección 10</a>
+      <a href="#seccion11">Sección 11</a>
+      <a href="#seccion12">Sección 12</a>
+      <a href="#seccion13">Sección 13</a>
+      <a href="#seccion14">Sección 14</a>
+      <a href="#seccion15">Sección 15</a>
+    </nav>
+  </header>
+
+  <!-- 15 secciones de catálogo -->
+  <main>
+    <!-- Puedes duplicar el contenido para cada sección -->
+    <section id="seccion1">
+      <h2>Sección 1</h2>
+      <div class="catalogo">
+        <div class="item">
+          <img src="https://via.placeholder.com/300x200" alt="Producto 1">
+          <p>Producto 1</p>
+        </div>
+        <div class="item">
+          <img src="https://via.placeholder.com/300x200" alt="Producto 2">
+          <p>Producto 2</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="seccion2">
+      <h2>Sección 2</h2>
+      <div class="catalogo">
+        <div class="item">
+          <img src="https://via.placeholder.com/300x200" alt="Producto A">
+          <p>Producto A</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ... Repite hasta la sección 15 -->
+    <section id="seccion15">
+      <h2>Sección 15</h2>
+      <div class="catalogo">
+        <div class="item">
+          <img src="https://via.placeholder.com/300x200" alt="Producto Final">
+          <p>Producto Final</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mi Empresa - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
